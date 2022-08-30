@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Bakery Order Form</h1>
+        <p id="description">Please fill up the form below for the order</p>
+    </header>
+    <main>
+        <form id="survey-form">
+            <label for="name" id="name-label">Customer's Name</label>
+            <input id="name" type="text" placeholder="Full name" required>
+            <br>
+            <label for="email" id="email-label">Customer's Email</label>
+            <input id="email" type="email" placeholder="example@example.com" required>
+            <br>
+            <label for="number" id="number-label">Customer's Phone Number</label>
+            <input id="number" type="number" placeholder="98XXXXXXXX" min="9800000000" max="9899999999" required>
+            <br>
+            <label for="address" id="address-label">Delivery Address</label>
+            <input id="address" type="address" placeholder="Street Address" required>
+            <br>
+            <label for="products"> <b>Bakery Products:</b></label>
+            <br>
+            <input id="checkbox" type="checkbox" name="products" value="cupcake">
+            <label for="checkbox"><strong>Cupcake-$2.00</strong></label>
+            <br>
+            <label for="number" id="number-label">Quantity</label>
+            <input id="number" type="number" placeholder="1" min="1" max="100" required>
+            <br>
+            <label for="dropdown" id="flavor">Select Flavor</label>
+            <select id="dropdown">
+                <option value="flavor-1">Chocolate</option>
+                <option value="flavor-2">Mocha</option>
+                <option value="flavor-3">Marble</option>
+                <option value="flavor-4">Double Dutch</option>
+            </select>
+            <br>
+            <label for="dropdown" id="icing">Select Icing</label>
+            <select id="dropdown">
+                <option value="icing-1">Chocolate</option>
+                <option value="icing-2">Caramel</option>
+                <option value="icing-3">Strawberry</option>
+                <option value="icing-4">Vanilla</option>
+            </select>
+            <br>
+            <input id="checkbox" type="checkbox" name="products" value="cookies">
+            <label for="checkbox"><strong>cookies-$0.50</strong></label>
+            <br>
+            <label for="number" id="number-label">Quantity</label>
+            <input id="number" type="number" placeholder="1" min="1" max="100" required>
+            <br>
+            <label for="dropdown" id="flavor">Select Flavor</label>
+            <select id="dropdown">
+                <option value="flavor-1">Chocolate</option>
+                <option value="flavor-2">Mocha</option>
+                <option value="flavor-3">Marble</option>
+                <option value="flavor-4">Double Dutch</option>
+            </select>
+            <br>
+            <label for="dropdown" id="icing">Select Icing</label>
+            <select id="dropdown">
+                <option value="icing-1">Chocolate</option>
+                <option value="icing-2">Caramel</option>
+                <option value="icing-3">Strawberry</option>
+                <option value="icing-4">Vanilla</option>
+            </select>
+            <br>
+            <input id="checkbox" type="checkbox" name="products" value="doughnut">
+            <label for="checkbox"><strong>Doughnut-$0.99</strong></label>
+            <br>
+            <label for="number" id="number-label">Quantity</label>
+            <input id="number" type="number" placeholder="1" min="1" max="100" required>
+            <br>
+            <label for="dropdown" id="flavor">Select Flavor</label>
+            <select id="dropdown">
+                <option value="flavor-1">Chocolate</option>
+                <option value="flavor-2">Mocha</option>
+                <option value="flavor-3">Marble</option>
+                <option value="flavor-4">Double Dutch</option>
+            </select>
+            <br>
+            <label for="dropdown" id="icing">Select Icing</label>
+            <select id="dropdown">
+                <option value="icing-1">Chocolate</option>
+                <option value="icing-2">Caramel</option>
+                <option value="icing-3">Strawberry</option>
+                <option value="icing-4">Vanilla</option>
+            </select>
+            <br>
+            <input id="checkbox" type="checkbox" name="products" value="cake">
+            <label for="checkbox"><strong>Cake-$4.99</strong></label>
+            <br>
+            <label for="number" id="number-label">Quantity</label>
+            <input id="number" type="number" placeholder="1" min="1" max="100" required>
+            <br>
+            <label for="dropdown" id="flavor">Select Flavor</label>
+            <select id="dropdown">
+                <option value="flavor-1">Chocolate</option>
+                <option value="flavor-2">Mocha</option>
+                <option value="flavor-3">Marble</option>
+                <option value="flavor-4">Double Dutch</option>
+            </select>
+            <br>
+            <label for="dropdown" id="icing">Select Icing</label>
+            <select id="dropdown">
+                <option value="icing-1">Chocolate</option>
+                <option value="icing-2">Caramel</option>
+                <option value="icing-3">Strawberry</option>
+                <option value="icing-4">Vanilla</option>
+            </select>
+            <br>
+            <label for="size" id="size"><b>Please Select The Size:</b> </label>
+            <br>
+            <input type="radio" name="size" id="product-size" value="small">
+            <label for="product-size">Small</label>
+            <br>
+            <input type="radio" name="size" id="product-size" value="medium">
+            <label for="product-size">Medium</label>
+            <br>
+            <input type="radio" name="size" id="product-size" value="large">
+            <label for="product-size">Large</label>
+            <br>
+            <label for="dropdown" id="payment">Payment Method</label>
+            <select id="dropdown">
+                <option value="method-1">Credit Card</option>
+                <option value="method-2">Cash On Delivery</option>
+                <option value="method-3">Paypal</option>
+                <option value="method-4">Bank Transfer</option>
+            </select>
+            <br>
+            <br>
+            <label id="textarea"><b>Do you have any additional information or instruction?</b></label>
+            <br>
+
+            <textarea id="textarea" name="instruction" rows="5" cols="40"></textarea>
+            <br>
+            <label for="event" id="event"><b>Event Type</b> </label>
+            <br>
+            <input type="radio" name="event" id="event-type" value="wedding">
+            <label for="event-type">Wedding</label>
+            <br>
+            <input type="radio" name="event" id="event-type" value="anniversary">
+            <label for="event-type">Anniversary</label>
+            <br>
+            <input type="radio" name="event" id="event-type" value="birthday">
+            <label for="event-type">Birthday</label>
+            <br>
+            <input type="radio" name="event" id="event-type" value="graduation">
+            <label for="event-type">Graduation</label>
+            <br>
+            <input type="radio" name="event" id="event-type" value="other">
+            <label for="event-type">Other</label>
+            <br>
+            <h4>Important Reminders</h4>
+            <ul>
+                <li>After submitting this form, we'll check your order and we'll contact you within 24-48 hours for
+                    conformation.</li>
+                <li>The turn around time depends on the ordered items.</li>
+                <li>Taxes and shipping fee will be applied for every order.</li>
+            </ul>
+            <br>
+            <input id="submit" type="submit" value="Order Now" class="submit-button">
+            <br>
+            <br>
+            <input id="submit" type="submit" value="Print Form" class="print-button">
+        </form>
+
+    </main>
+</body>
+
+</html>
